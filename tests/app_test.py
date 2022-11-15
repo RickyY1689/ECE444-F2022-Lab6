@@ -88,4 +88,4 @@ def test_delete_message(client):
     
 def test_search(client):
     rv = client.get("/search/?query=dummy_query")
-    assert rv.status == '200 OK'
+    assert rv.status_code == 200
